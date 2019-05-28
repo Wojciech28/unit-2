@@ -1,0 +1,197 @@
+
+/*global layout setup*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #000;
+    background-color: #fff;
+}
+img{
+    width: 100%;
+}
+
+/*link styles*/
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+       color: rgb(51, 238, 179);   
+}
+
+/*section-styles*/
+
+
+.nav{
+
+    padding-left: 0;
+}
+.nav a{
+    display: block;
+    padding: 5px;
+    margin: 10px 30px 10px 30px;
+    background-color: white;
+}
+.name{
+    margin: 0;
+    padding-top: 15px;
+}
+.profile-image{
+    width: 60%;
+    margin-top: 30px;
+    
+}
+.self-introduction{
+    padding: 15px;
+}
+ul,li{
+    list-style-type: none;
+}
+
+.student,.back{
+  display: inline-block;
+}
+.tablo{
+    display: none;
+}
+.student{
+    
+    float: left;
+    margin-right: 20px;
+}
+.back{
+    float: right;
+}
+footer{
+    border-top: 1px lightGray solid;
+   
+}
+.contact{
+    padding: 20px 0 20px 0;
+}
+.contact2,.adresnumber{
+  
+    color: gray;
+}
+
+/*wrapper section*/
+
+.header{
+    background-color: #f8f9f9;
+}
+.container{
+    padding: 0 15px 25px 15px;
+}
+.fot{
+    background-image: linear-gradient(  white, lightgray);
+    overflow: hidden;
+    margin-top: -10px;
+    padding: 0 15px;
+}
+
+/* Styles for larger screens */
+
+@media (min-width: 768px){
+    
+    
+    
+    .nav li{
+        display: inline-block;
+    }
+    .nav a{
+        background-color: #f8f9f9;
+        margin: 0 10px 0 10px;
+    }
+    .profile-image{
+        width: 40%;
+        float: right;
+      
+    }
+    .self-introduction{
+        width: 53%;
+        font-size: 1.4em;
+        color: gray;
+        text-align: left;
+        float: left;
+        padding: 0;
+    }
+    header{
+        overflow: hidden;
+        padding: 5px 20px 5px 20px;
+
+    }
+   .tablet1,.tablet2,.tablet3 {
+       display: inline-block;
+       width: 48%;
+       padding: 5px 10px 5px 10px;
+   }
+   .tablet2{
+       vertical-align: top;
+   }
+   .tablet3{
+    vertical-align: top;
+    }
+    .contact2{
+        padding: 20px 80px 20px 80px;
+    }
+    .profile-image,.header{
+        vertical-align: top;
+    }
+    .contact2,.adresnumber{
+        font-size: 1.2em;
+    }
+    .back{
+        display: none;
+    }
+    .tablo{
+        display: inline-block;
+        float: right;
+        padding-right: 20px; 
+    }
+ 
+}
+
+@media (min-width: 1024px){
+
+    .name {
+        
+        display: inline-block;
+        float: left;
+        padding: 20px;
+        
+
+    }
+    .header{
+        overflow: hidden;
+    }
+    .nav-list{
+        text-align: right;
+        padding: 35px 20px 20px 20px;
+        
+    }
+    .name,.nav-list{
+        vertical-align: top;
+    }
+    .self-introduction{
+        font-size: 2em;
+        padding-left: 1em; 
+    }
+    #portfolio {
+        padding-bottom: 60px;
+        font-size: 1.2em;
+    }
+    .contact :first-child{
+        font-size: 1.2em;
+    }
+}
+
+
